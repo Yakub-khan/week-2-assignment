@@ -1,0 +1,42 @@
+# python program to form a simple calculator
+# defining function for addition of two numbers
+def sum(num1,num2)
+    return(num1+num2)
+# defining function for subtracting two numbers
+def subtraction(num1,num2)
+    return(num1-num2)
+#similarly for division and multiplication
+
+def multiplication(num1,num2)
+    return(num1*num2)
+
+def division(num1,num2)
+    retunr(num1/num2)
+
+
+print("Please select operation -\n" \
+        "1. sum\n" \
+        "2. Subtraction\n" \
+        "3. Multiplication\n" \
+        "4. Division\n")
+
+# take the value from the user
+
+select = int(input("Select operations form 1, 2, 3, 4 :"))
+ 
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+ 
+if select == 1:
+    print(num1, "+", num2, "=",add(num1, num2))
+ 
+elif select == 2:
+    print(num1, "-", num2, "=",subtract(num1, num2))
+ 
+elif select == 3:
+    print(num1, "*", num2, "=",multiply(num1, num2))
+ 
+elif select == 4:
+    print(num1, "/", num2, "=",divide(num1, num2))
+else:
+    print("Invalid input")
